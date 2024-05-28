@@ -1,0 +1,281 @@
+@use 'color';
+
+.main {
+    .page_main {
+        margin-top: 50px;
+        margin-bottom: 120px;
+        position: relative;
+
+        @media (max-width: 767px) {
+            margin-top: 0;
+        }
+
+        .page_visual {
+            width: 100%;
+            height: 300px;
+            img {
+                height: 300px;
+                opacity: .6;
+
+            }
+        }
+        .page_title {
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            color: #000;
+        }
+    }
+
+    .contents {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 120px;
+
+        @media (max-width: 767px) {
+            flex-direction: column;          
+        }
+
+        article {
+            width: 48%;
+            margin-bottom: 40px;
+            position: relative;
+
+            @media (max-width: 767px) {
+                width: 90%;       
+                margin: 0 auto 40px;
+            }
+
+            img {
+                height: 250px;
+                opacity: 0;
+
+                @media (max-width: 767px) {
+                    aspect-ratio: 3/2;
+                    height: auto;
+                    text-align: center;
+                }
+
+            }
+
+        }
+    }
+
+    .main_anim {
+        img {
+            animation: slide-bottom .3s ease-out .5s forwards;
+        }
+    }
+
+    @keyframes slide-bottom {
+        from {
+            opacity: 0;
+            transform: translateY(20%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .company, .recruit {
+        margin-bottom: 120px;
+        .overview_list {
+            width: 100%;
+
+            .overview_item {
+                border-bottom: 1px dotted #555;
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                margin-bottom: 24px;
+                padding: 24px 40px;
+                text-align: left;
+                font-weight: 700;
+
+                @media (max-width: 767px) {
+                    flex-direction: column;
+                    width: 90%;
+                }
+
+                .overview_name {
+                    width: 40%;
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
+                }
+                
+                .overview_title {
+                    width: 60%;
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .contactpage {
+        margin-bottom: 120px;
+        .contact_list {
+            width: 100%;
+
+            .contact_item {
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom: 1px dotted #333;
+                width: 100%;
+                margin: 0 auto;
+                margin-bottom: 24px;
+                padding: 24px 40px;
+                text-align: left;
+
+                @media (max-width: 767px) {
+                    flex-direction: column;
+                    width: 90%;
+                }
+
+                dt {
+                    width: 30%;
+
+                    @media (max-width: 767px) {
+                        width: 100%;
+                        margin-bottom: 1em;
+                    }
+                }
+                dd {
+                    width: 70%;
+
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    border: solid 1px #c8c8c8;
+                    border-radius: 3px;
+                    background-color: #fafafa;
+                    padding: 8px 2%;
+                }
+
+                textarea {
+                    width: 100%;
+                    border: solid 1px #c8c8c8;
+                    border-radius: 3px;
+                    background-color: #fafafa;
+                    padding: 8px 2%;
+                    height: 10em;
+                }
+            }
+        }
+
+        .submit-btn {
+            text-align: center;
+            input {
+                color: #fff;
+                background-color: color.$main-color;
+                text-align: center;
+                padding: 12px 40px;
+                border-radius: 3px;
+            }
+        }
+        .submit-btn:hover input {
+            background-color: color.$sub-color;
+        }
+    }
+
+    .news_item {
+        margin-bottom: 120px;
+        &_title {
+            font-weight: 700;
+            margin-bottom: 1.5em;
+        }
+
+        &_date {
+            font-size: 20px;
+            margin-bottom: 1em;
+        }
+    }
+
+    .works_item {
+        margin-bottom: 120px;
+        &_title {
+            margin-bottom: 1em;
+        }
+
+        
+        &_image {
+            margin: 0 auto;
+            
+            @media (max-width: 767px) {
+                width: 80%;
+            }
+            li {
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    aspect-ratio: 3/2;
+                }
+            }
+        }
+        .slick-prev::before,
+        .slick-next::before{
+            color:color.$main-color;
+            font-size:30px;
+        }
+        
+        .slick-next {
+            right: -25px;
+        }
+        .slick-prev {
+            left: -35px;
+        }
+        
+        .slick-dots {
+            bottom: -40px;
+        }
+        
+        h3 {
+            background-color: color.$main-color;
+            color: #fff;
+            padding: 16px;
+            margin: 100px 0 24px;
+        }
+
+        &_detail {
+            .detail_item {
+                display: flex;
+                border-bottom: 1px solid #c8c8c8;
+                
+                dt {
+                    width: 20%;
+                    background-color: #f5f5f5;
+                    padding: 16px 0 16px 10px;
+                }
+                dd {
+                    width: 80%;
+                    padding: 16px 0 16px 10px;
+                }
+            }
+            .detail_item:nth-of-type(1) {
+                border-top: 1px solid #c8c8c8;
+            }
+        }
+        a {
+            display: block;
+            width: 150px;
+            margin: 24px auto 0;
+            text-align: center;
+            background-color: color.$main-color;
+            font-size: 12px;
+            padding: 10px 40px;
+            color: #fff;
+            border-radius: 10px;
+        }
+        a:hover {
+             background-color: color.$sub-color;
+        }
+    }
+}

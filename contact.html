@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創和</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="public\css\style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="header_logo">
+            <a href="#"><img src="img\logo.jpg" alt=""></a>
+        </h1>
+
+        <ul class="header_list">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="works.html">施工実績</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="recruit.html">採用情報</a></li>
+            <li class="open_page"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="mask"></div>
+    </header>
+
+    <main class="main">
+
+        <section class="page_main">
+            <div class="page_visual">
+                <img src="img\contact_main.jpg" alt="">
+            </div>
+            <div class="page_title">
+                <h2 class="section_title">
+                    お問い合わせ<br><span>contact</span>
+                </h2>
+            </div>
+        </section>
+
+        <section class="contactpage wrapper">
+            <dl class="contact_list">
+                <div class="contact_item">
+                    <dt><label for="company-name">会社名</label></dt>
+                    <dd><input type="text" id="company-name" name="company-name"></dd>
+                </div>
+                <div class="contact_item">
+                    <dt><label for="name">名前</label></dt>
+                    <dd><input type="text" id="name" name="your-name"></dd>
+                </div>
+                <div class="contact_item">
+                    <dt><label for="furigana">ふりがな</label></dt>
+                    <dd><input type="text" id="furigana" name="furigana-name"></dd>
+                </div>
+                <div class="contact_item">
+                    <dt><label for="e-mail">メールアドレス</label></dt>
+                    <dd><input type="email" id="e-mail" name="your-email"></dd>
+                </div>
+                <div class="contact_item">
+                    <dt><label for="re-mail">メールアドレス(確認用)</label></dt>
+                    <dd><input type="email" id="re-mail" name="re-mail"></dd>
+                </div>
+                <div class="contact_item">
+                    <dt><label for="message">お問い合わせの内容</label></dt>
+                    <dd><textarea  id="message" name="your-message"></textarea></dd>
+                </div>
+            </dl>
+            <div class="submit-btn">
+                <input type="submit" value="送信する">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer_info">
+            <div class="footer_logo">
+                <a href="#"><img src="img\logo.jpg" alt=""></a>
+            </div>
+    
+            <p class="time">営業時間/8:00~17:00</p>
+            <p class="closedday">定休日/土曜・日曜・祝日</p>
+        </div>
+
+        <ul class="footer_list">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="works.html">施工実績</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="recruit.html">採用情報</a></li>
+            <li class="open_page"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js\main.js"></script>
+</body>
+</html>

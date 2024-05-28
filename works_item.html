@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創和</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="public\css\style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="header_logo">
+            <a href="#"><img src="img\logo.jpg" alt=""></a>
+        </h1>
+
+        <ul class="header_list">
+            <li><a href="index.html">ホーム</a></li>
+            <li class="open_page"><a href="works.html">施工実績</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="recruit.html">採用情報</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="mask"></div>
+    </header>
+
+    <main class="main">
+
+        <section class="page_main">
+            <div class="page_visual">
+                <img src="img\works_main.jpg" alt="">
+            </div>
+            <div class="page_title">
+                <h2 class="section_title">
+                    施工実績<br><span>business</span>
+                </h2>
+            </div>
+        </section>
+
+        <section class="works_item wrapper">
+            <h2 class="works_item_title">
+                xxxxxxxxxxxxx工事
+            </h2>
+            <!-- slick -->
+            <ul class="works_item_image">
+                <li><img src="img\works_item1.jpg" alt=""></li>
+                <li><img src="img\works_item2.jpg" alt=""></li>
+                <li><img src="img\works_item3.jpg" alt=""></li>
+                <li><img src="img\works_item4.jpg" alt=""></li>
+            </ul>
+            
+
+            <h3>工事内容</h3>
+            <dl class="works_item_detail">
+                <div class="detail_item">
+                    <dt>施工期間</dt>
+                    <dd>令和3年2月15日～令和3年11月9日</dd>
+                </div>
+                <div class="detail_item">
+                    <dt>発注者</dt>
+                    <dd>A株式会社</dd>
+                </div>
+                <div class="detail_item">
+                    <dt>概要</dt>
+                    <dd>
+                        木造　2階建<br>
+                        建築面積　70.59㎡<br><br>
+                        陸屋根　塩ビシート断熱工法　ベランダ　FRP防水<br>
+                        軒裏　スラグ石膏板<br>
+                        外壁　窯業系サイディング<br>
+                        建具　アルミ製防水設備<br>
+                    </dd>
+                </div>
+            </dl>
+
+            <a href="works.html">一覧へ戻る</a>
+            
+        </section>
+
+        <section class="contact">
+            <div class="wrapper">
+                <h2 class="section_title">
+                    お問い合わせ<br><span>contact</span>
+                </h2>
+
+                <div class="contact_content">
+                    <div class="contact_text">
+                        <p>ご相談・ご質問等ございましたら、お気軽にお問い合わせください</p>
+                    </div>
+
+                    <div class="contact_info">
+                        <p class="tel">TEL/024-502-5636</p>
+                        <p class="businesstime">平日8:00~17:00</p>
+                        <a href="#" class="contact_button">お問い合わせ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer_info">
+            <div class="footer_logo">
+                <a href="#"><img src="img\logo.jpg" alt=""></a>
+            </div>
+    
+            <p class="time">営業時間/8:00~17:00</p>
+            <p class="closedday">定休日/土曜・日曜・祝日</p>
+        </div>
+
+        <ul class="footer_list">
+            <li><a href="index.html">ホーム</a></li>
+            <li class="open_page"><a href="works.html">施工実績</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="recruit.html">採用情報</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js\main.js"></script>
+</body>
+</html>
